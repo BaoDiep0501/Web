@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Đại học X – Liên hệ</title>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+  <div class="topbar"><div class="container"><div>Chúng tôi sẵn sàng hỗ trợ bạn</div></div></div>
+  <header class="header"><div class="container header__wrap"><a class="logo" href="index.html"><span>ĐẠI HỌC <b>X</b></span></a></div></header>
+  <nav class="nav"><div class="container"><ul class="nav__list">
+    <li><a class="nav__link" href="index.html">Trang chủ</a></li>
+    <li><a class="nav__link" href="about.html">Giới thiệu</a></li>
+    <li><a class="nav__link" href="academics.html">Đào tạo</a></li>
+    <li><a class="nav__link" href="achievements.html">Thành tích</a></li>
+    <li><a class="nav__link is-active" href="contact.html">Liên hệ</a></li>
+  </ul></div></nav>
+
+  <main class="section">
+    <div class="container grid-2">
+      <section>
+        <h1>Liên hệ</h1>
+        <p class="lead">Điền form sau hoặc chọn phương thức phù hợp.</p>
+        <form class="form" id="contactForm" novalidate>
+          <label>Họ tên<input type="text" name="name" required></label>
+          <label>Email<input type="email" name="email" required></label>
+          <label>Nội dung<textarea name="message" rows="5" required></textarea></label>
+          <button class="btn btn--primary" type="submit">Gửi câu hỏi</button>
+          <p class="form__msg" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+      <aside class="well">
+        <h3>Kết nối nhanh</h3>
+        <p><i class="fa-solid fa-phone"></i> (028) 1234 5678</p>
+        <p><i class="fa-regular fa-envelope"></i> tuyensinh@dhx.edu.vn</p>
+        <p><i class="fa-solid fa-location-dot"></i> 01 Đường ABC, Q.1, TP.HCM</p>
+        <div class="map-placeholder">*Chỗ nhúng bản đồ</div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="footer"><div class="container footer__grid"><div><div class="logo logo--small">ĐẠI HỌC <b>X</b></div></div></div></footer>
+  <button class="to-top" aria-label="Về đầu trang"><i class="fa-solid fa-arrow-up"></i></button>
+  <script src="main.js" defer></script>
+</body>
+</html>
