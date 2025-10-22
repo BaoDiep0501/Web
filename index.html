@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="vi">
 <head>
   <meta charset="utf-8">
@@ -17,7 +17,6 @@
       <div class="topbar__right">
         <a href="#" class="topbar__link"><i class="fa-brands fa-facebook"></i></a>
         <a href="#" class="topbar__link"><i class="fa-brands fa-youtube"></i></a>
-        <a href="#" class="topbar__cta" data-scroll="#contact-cta"><i class="fa-regular fa-paper-plane"></i> Tư vấn tuyển sinh</a>
       </div>
     </div>
   </div>
@@ -26,13 +25,13 @@
   <header class="header">
     <div class="container header__wrap">
       <a class="logo" href="index.html">
-        <img src="assets/img/logo.svg" alt="Logo ĐH X" onerror="this.style.display='none'">
+        <img src="logo.svg" alt="Logo Đại học X" onerror="this.style.display='none'">
         <span>ĐẠI HỌC <b>X</b></span>
       </a>
     </div>
   </header>
 
-  <!-- Nav -->
+  <!-- Navigation -->
   <nav class="nav">
     <div class="container">
       <ul class="nav__list">
@@ -41,19 +40,19 @@
         <li><a class="nav__link" href="academics.html">Đào tạo</a></li>
         <li><a class="nav__link" href="achievements.html">Thành tích</a></li>
         <li><a class="nav__link" href="contact.html">Liên hệ</a></li>
-        <li class="nav__push"><a class="btn btn--primary" href="#contact-cta" data-scroll>Đăng ký tư vấn</a></li>
+        <li class="nav__push"><a class="btn btn--primary" href="contact.html">Đăng ký tư vấn</a></li>
       </ul>
     </div>
   </nav>
 
   <main>
-    <!-- HERO: ảnh lớn + overlay khi hover/focus -->
+    <!-- HERO -->
     <section class="hero">
-      <figure class="hero__figure" tabindex="0" aria-labelledby="hero-title" aria-describedby="hero-desc">
-        <img src="assets/img/hero.jpg" alt="Khuôn viên trường – ảnh minh họa">
+      <figure class="hero__figure" tabindex="0">
+        <img src="hero.jpg" alt="Khuôn viên trường">
         <figcaption class="hero__caption">
-          <h1 id="hero-title">Think Big — Học để dẫn đầu</h1>
-          <p id="hero-desc">Môi trường học tập đổi mới, kết nối doanh nghiệp, hướng tới chuẩn quốc tế.</p>
+          <h1>Think Big — Học để dẫn đầu</h1>
+          <p>Môi trường học tập đổi mới, kết nối doanh nghiệp, hướng tới chuẩn quốc tế.</p>
           <div class="hero__actions">
             <a class="btn btn--primary" href="about.html">Khám phá</a>
             <a class="btn btn--ghost" href="academics.html">Chương trình đào tạo</a>
@@ -62,14 +61,14 @@
       </figure>
     </section>
 
-    <!-- Dải “chương trình tiêu biểu” -->
+    <!-- NGÀNH NỔI BẬT -->
     <section class="programs section">
       <div class="container">
         <div class="section__head">
           <h2>Ngành đào tạo nổi bật</h2>
           <a class="link" href="academics.html">Xem tất cả <i class="fa-solid fa-arrow-right"></i></a>
         </div>
-        <div class="ribbon" id="ribbon">
+        <div class="grid-3 cards">
           <article class="card card--program">
             <h3>Công nghệ thông tin</h3>
             <p>Kỹ sư phần mềm, AI, an toàn thông tin…</p>
@@ -85,36 +84,23 @@
             <p>Khởi nghiệp, phân tích dữ liệu…</p>
             <a href="academics.html#biz" class="btn btn--sm btn--ghost">Tìm hiểu</a>
           </article>
-          <article class="card card--program">
-            <h3>Thiết kế số</h3>
-            <p>UI/UX, truyền thông đa phương tiện…</p>
-            <a href="academics.html#design" class="btn btn--sm btn--ghost">Tìm hiểu</a>
-          </article>
         </div>
       </div>
     </section>
 
-    <!-- Block giới thiệu ngắn -->
+    <!-- VÌ SAO CHỌN -->
     <section class="about section">
       <div class="container grid-2">
         <div>
-          <h2>Vì sao chọn ĐH X?</h2>
+          <h2>Vì sao chọn Đại học X?</h2>
           <ul class="feature-list">
             <li><i class="fa-solid fa-building-columns"></i> Cơ sở vật chất hiện đại</li>
-            <li><i class="fa-solid fa-people-group"></i> Đội ngũ giảng viên nhiệt huyết</li>
+            <li><i class="fa-solid fa-people-group"></i> Giảng viên tận tâm</li>
             <li><i class="fa-solid fa-handshake-angle"></i> Hợp tác doanh nghiệp sâu rộng</li>
           </ul>
-          <a class="btn btn--primary" href="about.html">Xem thêm</a>
+          <a class="btn btn--primary" href="about.html">Tìm hiểu thêm</a>
         </div>
-        <div class="well">*Khu vực đặt ảnh/đồ họa – thay sau khi thi.</div>
-      </div>
-    </section>
-
-    <!-- CTA -->
-    <section id="contact-cta" class="cta section">
-      <div class="container cta__box">
-        <h3>Bạn cần tư vấn tuyển sinh?</h3>
-        <a class="btn btn--primary btn--lg" href="contact.html">Liên hệ ngay</a>
+        <div class="well">*Vùng đặt ảnh minh hoạ — thay sau*</div>
       </div>
     </section>
   </main>
