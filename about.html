@@ -21,22 +21,77 @@
     <li><a class="nav__link" href="contact.html">Liên hệ</a></li>
   </ul></div></nav>
 
-  <main class="section">
-    <div class="container narrow">
-      <h1>Về Đại học X</h1>
-      <p class="lead">Giới thiệu chung – Sứ mạng – Tầm nhìn – Giá trị cốt lõi.</p>
+  <main class="about-page">
+  <div class="container about-layout">
+    <!-- SIDEBAR -->
+    <aside class="about-sidebar">
+      <h3>Về Đại học X</h3>
+      <nav>
+        <ul>
+          <li><a href="#intro">Giới thiệu chung</a></li>
+          <li><a href="#mission">Sứ mạng</a></li>
+          <li><a href="#vision">Tầm nhìn</a></li>
+          <li><a href="#values">Giá trị cốt lõi</a></li>
+        </ul>
+      </nav>
+    </aside>
 
-      <div class="grid-3 features">
-        <div class="card"><h3>Sứ mạng</h3><p>Đào tạo nguồn nhân lực chất lượng cao phục vụ quốc gia.</p></div>
-        <div class="card"><h3>Tầm nhìn</h3><p>Trở thành đại học nghiên cứu ứng dụng hàng đầu khu vực.</p></div>
-        <div class="card"><h3>Giá trị</h3><p>Chính trực – Đổi mới – Phụng sự – Hợp tác.</p></div>
+    <!-- MAIN CONTENT -->
+    <section class="about-content">
+      <article id="intro">
+        <h2>Giới thiệu chung</h2>
+        <p>Đại học X là cơ sở đào tạo, nghiên cứu và ứng dụng công nghệ hàng đầu...</p>
+      </article>
+
+      <article id="mission">
+        <h2>Sứ mạng</h2>
+        <p>Đào tạo nguồn nhân lực chất lượng cao, đáp ứng yêu cầu phát triển đất nước.</p>
+      </article>
+
+      <article id="vision">
+        <h2>Tầm nhìn</h2>
+        <p>Trở thành đại học nghiên cứu ứng dụng hàng đầu khu vực Đông Nam Á...</p>
+      </article>
+
+      <article id="values">
+        <h2>Giá trị cốt lõi</h2>
+        <ul>
+          <li>Chính trực</li>
+          <li>Đổi mới</li>
+          <li>Phụng sự</li>
+          <li>Hợp tác</li>
+        </ul>
+      </article>
+    </section>
+  </div>
+</main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <div class="logo logo--small">ĐẠI HỌC <b>X</b></div>
+        <p>© 2025 Đại học X. All rights reserved.</p>
       </div>
-
-      <article class="well mt-32">*Vùng chèn timeline lịch sử / bộ ảnh – bạn thay nội dung sau.</article>
+      <div>
+        <h4>Liên kết nhanh</h4>
+        <ul class="list">
+          <li><a href="about.html">Giới thiệu</a></li>
+          <li><a href="academics.html">Đào tạo</a></li>
+          <li><a href="achievements.html">Thành tích</a></li>
+          <li><a href="contact.html">Liên hệ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Kết nối</h4>
+        <p class="social">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+        </p>
+      </div>
     </div>
-  </main>
-
-  <footer class="footer"><div class="container footer__grid"><div><div class="logo logo--small">ĐẠI HỌC <b>X</b></div><p>© 2025.</p></div></div></footer>
+  </footer>
   <button class="to-top" aria-label="Về đầu trang"><i class="fa-solid fa-arrow-up"></i></button>
   <script src="main.js" defer></script>
 </body>
