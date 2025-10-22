@@ -45,9 +45,11 @@ body {
 
 .grid-2 {
   display: grid;
-  grid-template-columns: 1.2fr .8fr;
-  gap: 32px;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 48px;
+  align-items: start;
 }
+
 
 .grid-3 {
   display: grid;
@@ -169,6 +171,51 @@ body {
   color: #e5e7eb;
   margin-bottom: 20px;
   max-width: 600px;
+}
+/*===== FORM ===== */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 32px 28px; /* thêm padding trong form */
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
+}
+
+.form label {
+  font-weight: 600;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.form input,
+.form textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #d9dde3;
+  border-radius: 8px;
+  font: inherit;
+}
+
+.form input:focus,
+.form textarea:focus {
+  outline: 2px solid #b8ead3;
+  border-color: #6bd19f;
+}
+
+/* Cột bên phải (Kết nối nhanh) */
+aside.well {
+  background: #f2faf5;
+  padding: 32px 28px; /* đồng bộ padding */
+  border-radius: 12px;
+  color: #4b5563;
+  height: fit-content;
+}
+aside.well h3 {
+  margin-bottom: 20px;
+  color: #0a3d23;
 }
 
 /* ===== BUTTONS ===== */
