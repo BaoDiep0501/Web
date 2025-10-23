@@ -9,41 +9,94 @@
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 </head>
 <body>
-  <div class="topbar"><div class="container"><div class="topbar__left">Thông tin tuyển sinh</div><div class="topbar__right"></div></div></div>
-  <header class="header"><div class="container header__wrap"><a class="logo" href="index.html"><span>ĐẠI HỌC <b>X</b></span></a></div></header>
+  <div class="topbar"><div class="container"><div class="topbar__left"><i class="fa-regular fa-envelope"></i> lienhe@dhx.edu.vn</div><div class="topbar__right"><a href="#" class="topbar__link"><i class="fa-brands fa-facebook"></i></a><a href="#" class="topbar__link"><i class="fa-brands fa-youtube"></i></a></div></div></div>
+  <header class="header"><div class="container header__wrap"><a class="logo" href="index.html"><span>ĐẠI HỌC <b>X</b></span></a> </div></header>
   <nav class="nav"><div class="container"><ul class="nav__list">
     <li><a class="nav__link" href="index.html">Trang chủ</a></li>
     <li><a class="nav__link" href="about.html">Giới thiệu</a></li>
     <li><a class="nav__link is-active" href="academics.html">Đào tạo</a></li>
     <li><a class="nav__link" href="contact.html">Liên hệ</a></li>
   </ul></div></nav>
-
   <main class="section">
     <div class="container">
+      
       <h1>Chương trình đào tạo</h1>
-      <div class="grid-3 cards">
-        <article id="it" class="card card--program">
-          <h3>Công nghệ thông tin</h3>
-          <ul class="list"><li>Phát triển phần mềm</li><li>AI & Khoa học dữ liệu</li><li>An toàn thông tin</li></ul>
-          <a href="major-it.html" class="btn btn--ghost btn--sm">Xem chi tiết</a>
-        </article>
-        <article id="telecom" class="card card--program">
-          <h3>Điện tử – Viễn thông</h3>
-          <ul class="list"><li>Hệ thống viễn thông</li><li>IoT & Nhúng</li></ul>
-          <a href="major-telecom.html" class="btn btn--ghost btn--sm">Xem chi tiết</a>
-        </article>
-        <article id="biz" class="card card--program">
-          <h3>Quản trị kinh doanh</h3>
-          <ul class="list"><li>Marketing số</li><li>Phân tích dữ liệu</li></ul>
-          <a href="major-business.html" class="btn btn--ghost btn--sm">Xem chi tiết</a>
-        </article>
-      </div>
+      <p class="lead" style="margin:10px 0 24px;color:#444;">Cuộn trang để xem chi tiết các khối ngành. Bạn có thể thay ảnh & nội dung ngay tại các khối bên dưới.</p>
 
-      <div class="well mt-32">*Vùng chèn quy trình tuyển sinh/biểu phí – placeholder.</div>
+      <!-- NGÀNH 1: CNTT -->
+      <article id="it" class="card card--program" style="margin-bottom:24px">
+        <div class="grid-3" style="grid-template-columns: 40% 60%; gap: 16px;">
+          <figure class="hero__figure" tabindex="0" style="margin:0">
+            <!-- Thay ảnh tại đây -->
+            <img src="assets/it.jpg" alt="Ảnh minh họa ngành CNTT" onerror="this.style.display='none'">
+            <figcaption class="hero__caption">
+              <h2>Công nghệ thông tin</h2>
+              <p>Học nền tảng lập trình, cấu trúc dữ liệu – giải thuật, cơ sở dữ liệu; định hướng Phát triển phần mềm, AI &amp; Data, An toàn thông tin.</p>
+            </figcaption>
+          </figure>
+          <div class="card" style="box-shadow:none">
+            <h3 style="margin-top:0">Lộ trình & điểm nhấn</h3>
+            <ul class="feature-list">
+              <li><i class="fa-solid fa-code"></i> Phát triển Web/App, DevOps</li>
+              <li><i class="fa-solid fa-brain"></i> AI &amp; Khoa học dữ liệu</li>
+              <li><i class="fa-solid fa-shield-halved"></i> An toàn thông tin</li>
+            </ul>
+            <!-- Đoạn mô tả tuỳ chỉnh -->
+            <p><b>Nội dung gợi ý (thay tuỳ ý):</b> Dự án capstone với doanh nghiệp; chứng chỉ AWS/Google Cloud; CLB lập trình &amp; cuộc thi học thuật.</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- NGÀNH 2: Điện tử – Viễn thông -->
+      <article id="telecom" class="card card--program" style="margin-bottom:24px">
+        <div class="grid-3" style="grid-template-columns: 40% 60%; gap: 16px;">
+          <figure class="hero__figure" tabindex="0" style="margin:0">
+            <!-- Thay ảnh tại đây -->
+            <img src="assets/telecom.jpg" alt="Ảnh minh họa ngành Điện tử – Viễn thông" onerror="this.style.display='none'">
+            <figcaption class="hero__caption">
+              <h2>Điện tử – Viễn thông</h2>
+              <p>Tập trung tín hiệu – hệ thống, mạng 5G/6G, IoT &amp; Nhúng; dự án thiết kế phần cứng – phần mềm tích hợp.</p>
+            
+            </figcaption>
+          </figure>
+          <div class="card" style="box-shadow:none">
+            <h3 style="margin-top:0">Lộ trình & điểm nhấn</h3>
+            <ul class="feature-list">
+              <li><i class="fa-solid fa-tower-cell"></i> Hệ thống viễn thông, RF</li>
+              <li><i class="fa-solid fa-microchip"></i> IoT &amp; Embedded</li>
+              <li><i class="fa-solid fa-network-wired"></i> Mạng cảm biến &amp; 5G/6G</li>
+            </ul>
+            <p><b>Nội dung gợi ý (thay tuỳ ý):</b> Lab phần cứng; dự án IoT thực tế; hợp tác doanh nghiệp trong mảng 5G/6G.</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- NGÀNH 3: Quản trị Kinh doanh -->
+      <article id="biz" class="card card--program" style="margin-bottom:24px">
+        <div class="grid-3" style="grid-template-columns: 40% 60%; gap: 16px;">
+          <figure class="hero__figure" tabindex="0" style="margin:0">
+            <!-- Thay ảnh tại đây -->
+            <img src="assets/biz.jpg" alt="Ảnh minh họa ngành Quản trị Kinh doanh" onerror="this.style.display='none'">
+            <figcaption class="hero__caption">
+              <h2>Quản trị kinh doanh</h2>
+              <p>Trang bị kiến thức quản trị, marketing số, phân tích dữ liệu kinh doanh; case thực tế cùng doanh nghiệp.</p>
+      
+            </figcaption>
+          </figure>
+          <div class="card" style="box-shadow:none">
+            <h3 style="margin-top:0">Lộ trình & điểm nhấn</h3>
+            <ul class="feature-list">
+              <li><i class="fa-solid fa-bullhorn"></i> Digital Marketing</li>
+              <li><i class="fa-solid fa-chart-line"></i> Phân tích dữ liệu</li>
+              <li><i class="fa-solid fa-briefcase"></i> Khởi nghiệp &amp; Quản trị</li>
+            </ul>
+            <p><b>Nội dung gợi ý (thay tuỳ ý):</b> Dự án thực chiến; cố vấn nghề nghiệp; lộ trình chứng chỉ marketing/data.</p>
+          </div>
+        </div>
+      </article>
+
     </div>
   </main>
-
-  <!-- Footer -->
   <footer class="footer">
     <div class="container footer__grid">
       <div>
