@@ -19,9 +19,10 @@ body {
 
 /* ===== FONT & BIẾN TOÀN CỤC ===== */
 :root {
-  --green: #1a7f4c;
-  --green-dark: #13633b;
-  --bg: #f9fafb;
+  --primary: #9a1e22;
+  --primary-dark: #7f181c;
+  --bg: #fff2ea;
+  --bg-soft: #ffe6d2;
   --text: #1b1d1f;
   --muted: #6b7280;
   --radius: 12px;
@@ -53,8 +54,8 @@ body {
 
 /* ===== HEADER ===== */
 .topbar {
-  background: #e9f6ef;
-  color: var(--green-dark);
+  background: var(--bg-soft);
+  color: var(--primary-dark);
   font-size: 14px;
 }
 .topbar .container {
@@ -64,12 +65,12 @@ body {
   height: 36px;
 }
 .topbar__link {
-  color: var(--green-dark);
+  color: var(--primary-dark);
   margin-left: 12px;
   transition: var(--transition);
 }
 .topbar__link:hover {
-  color: var(--green);
+  color: var(--primary);
 }
 
 .header {
@@ -114,8 +115,8 @@ body {
 }
 .nav__link:hover,
 .nav__link.is-active {
-  color: var(--green);
-  border-color: var(--green);
+  color: var(--primary);
+  border-color: var(--primary);
 }
 .nav__push {
   margin-left: auto;
@@ -226,17 +227,17 @@ aside.well h3 {
   text-decoration: none;
 }
 .btn--primary {
-  background: var(--green);
+  background: var(--primary);
   color: #fff;
 }
 .btn--primary:hover {
-  background: var(--green-dark);
+  background: var(--primary-dark);
   transform: translateY(-2px);
 }
 .btn--ghost {
   background: #fff;
-  color: var(--green);
-  border-color: var(--green);
+  color: var(--primary);
+  border-color: var(--primary);
 }
 .btn--ghost:hover {
   background: #ecfdf5;
@@ -250,7 +251,7 @@ aside.well h3 {
   margin-bottom: 24px;
 }
 .link {
-  color: var(--green);
+  color: var(--primary);
   text-decoration: none;
 }
 .link:hover {
@@ -280,7 +281,7 @@ aside.well h3 {
   font-weight: 500;
 }
 .feature-list i {
-  color: var(--green);
+  color: var(--primary);
   margin-right: 6px;
 }
 .well {
@@ -292,20 +293,13 @@ aside.well h3 {
 }
 
 /* ===== FOOTER ===== */
-.footer {
-  background: #0f1a13;
-  color: #dbe7e0;
-  padding: 40px 0;
-}
+.footer { background: var(--primary); color: #fff2ea; padding: 40px 0; }
 .footer__grid {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
   gap: 24px;
 }
-.footer a {
-  color: #b6f0d0;
-  text-decoration: none;
-}
+.footer a { color: #ffe6d2; text-decoration: none; }
 .footer a:hover {
   text-decoration: underline;
 }
@@ -319,7 +313,7 @@ aside.well h3 {
   position: fixed;
   right: 20px;
   bottom: 20px;
-  background: var(--green);
+  background: var(--primary);
   color: #fff;
   border: none;
   border-radius: 50%;
@@ -360,7 +354,7 @@ aside.well h3 {
 .about-sidebar h3 {
   margin-bottom: 16px;
   font-size: 20px;
-  color: var(--green-dark);
+  color: var(--primary-dark);
 }
 .about-sidebar ul {
   list-style: none;
@@ -371,12 +365,12 @@ aside.well h3 {
 }
 .about-sidebar a {
   text-decoration: none;
-  color: var(--green-dark);
+  color: var(--primary-dark);
   font-weight: 500;
   transition: all .25s;
 }
 .about-sidebar a:hover {
-  color: var(--green);
+  color: var(--primary);
   text-decoration: underline;
 }
 
@@ -387,7 +381,7 @@ aside.well h3 {
 .about-content h2 {
   font-size: 28px;
   margin-bottom: 12px;
-  color: var(--green-dark);
+  color: var(--primary-dark);
 }
 .about-content p, .about-content ul {
   color: #333;
@@ -398,33 +392,3 @@ aside.well h3 {
 /* Hiệu ứng scroll mượt */
 html { scroll-behavior: smooth; }
 
-/* ===== BREADCRUMB ===== */
-.breadcrumb {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 15px;
-  margin: 24px 0 16px;
-  color: var(--green-dark);
-  flex-wrap: wrap;
-}
-
-.breadcrumb a {
-  color: var(--green-dark);
-  text-decoration: none;
-  transition: all 0.2s ease;
-}
-
-.breadcrumb a:hover {
-  color: var(--green);
-  text-decoration: underline;
-}
-
-.breadcrumb .current {
-  font-weight: 600;
-  color: var(--green);
-}
-
-.breadcrumb span {
-  color: #a6b5a8; /* màu mũi tên nhạt */
-}
