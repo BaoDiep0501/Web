@@ -293,13 +293,20 @@ aside.well h3 {
 }
 
 /* ===== FOOTER ===== */
-.footer { background: var(--primary); color: #fff2ea; padding: 40px 0; }
+.footer {
+  background: #0f1a13;
+  color: #dbe7e0;
+  padding: 40px 0;
+}
 .footer__grid {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
   gap: 24px;
 }
-.footer a { color: #ffe6d2; text-decoration: none; }
+.footer a {
+  color: #b6f0d0;
+  text-decoration: none;
+}
 .footer a:hover {
   text-decoration: underline;
 }
@@ -392,3 +399,9 @@ aside.well h3 {
 /* Hiệu ứng scroll mượt */
 html { scroll-behavior: smooth; }
 
+/* ===== Academics page (moved from inline) ===== */
+.program-section { margin-bottom: 24px; }
+.program-grid { grid-template-columns: 40% 60%; gap: 16px; }
+.program-figure { margin: 0; }
+.program-card { box-shadow: none; }
+.program-card h3 { margin-top: 0; }
